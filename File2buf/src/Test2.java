@@ -1,14 +1,27 @@
+/**
+ * 类Test2用于将一个整数转换为16进制的字符串
+ * @author 李泰然
+ * @time 2015年12月15日11:27:08
+ */
 public class Test2 {
+	/**
+	 * 主函数main用于调用IntToHex，并打印其返回的结果
+	 * @param args
+	 * @return void
+	 * @time 2015年12月15日11:31:53
+	 */
 	public static void main(String[] args) {
-		int n=666;
+		int n=10;
 		String hex=IntToHex(n);
-//		System.out.println(hex);
-		String a = null;
-		System.out.println(a);
+		System.out.println(hex);
 	}
-	
+	/**
+	 * 函数IntToHex将一个整数转换为16进制的字符串
+	 * @param n 一个整数
+	 * @return String  一个字符串对象
+	 */
 	public static String IntToHex(int n) {
-		String hex="";//为什么定义为NULL不行！
+		String hex="";
 		String hexOpp="";
 		while(n!=0){
 			int mod=n%16;
